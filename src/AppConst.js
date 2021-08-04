@@ -1,3 +1,7 @@
 // declaring constants values for status values
-export const BeforeClicking = "Before Clicking";
-export const AfterClicking = "After Clicking";
+export const data = [
+  "Before Clicking",
+  "Middle Clicking",
+  "Before after clicking",
+  "After Clicking",
+];

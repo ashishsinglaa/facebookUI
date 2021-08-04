@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import { data } from "./AppConst";
+import { BeforeClicking, AfterClicking } from "./AppConst";
 
 const App = () => {
-  //state hook for status
-  const [dataIndex, setDataIndex] = useState(0);
+  let Status = BeforeClicking;
+
+  console.log("this is useState", useState());
 
   // function runs on button call
   const clickHandler = () => {
-    dataIndex === data.length - 1
-      ? setDataIndex(0)
-      : setDataIndex(dataIndex + 1);
+    if (Status === BeforeClicking) Status = AfterClicking;
   };
 
   return (
     <div>
-      <h1>{data[dataIndex]}</h1>
+      <h1>{Status}</h1>
       <button onClick={clickHandler}>Click me</button>
     </div>
   );
