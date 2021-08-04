@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { data } from "./AppConst";
 
 const App = () => {
-  //state hook for status
+  //Defining state for setting index numbers according to msg
   const [dataIndex, setDataIndex] = useState(0);
 
-  // function runs on button call
+  // calling when button "click me" press and increasing the index number into the "dataIndex" state
   const clickHandler = () => {
     dataIndex === data.length - 1
       ? setDataIndex(0)
