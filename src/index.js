@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+// import App from "./App";
 import ChangeName from "./ChangeName";
-import UseState from "./UseState";
+import TodoList from "./components/TodoList";
+// import UseState from "./UseState";
 
-ReactDOM.render(<ChangeName />, document.getElementById("root"));
+ReactDOM.render(<TodoList />, document.getElementById("root"));
