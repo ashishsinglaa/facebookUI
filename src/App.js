@@ -1,10 +1,10 @@
 import React from "react";
-import LoginForm from "./components/LoginForm/LoginForm";
+import ChangeTitle from "./components/ChangeTitle";
 
 const App = () => {
   return (
     <div>
-      <LoginForm />
+      <ChangeTitle />
     </div>
   );
 };
