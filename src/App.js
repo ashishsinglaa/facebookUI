@@ -1,12 +1,9 @@
 import React from "react";
-import ChangeTitle from "./components/ChangeTitle";
+import "./App.css";
+import Login from "./components/Login";
 
 const App = () => {
-  return (
-    <div>
-      <ChangeTitle />
-    </div>
-  );
+  return <Login />;
 };
 
 export default App;
